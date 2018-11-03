@@ -1,0 +1,93 @@
+<div style="height:100%;width:100%;background:#fff">
+  <div class="demo-options">
+          <div class="demo-options-icon"></div>
+          <div class="demo-heading">Demo Settings</div>
+
+          <div class="demo-body">
+              <div class="tabular">
+                  <div class="tabular-row">
+                      <div class="tabular-cell">Fixed Heade11r</div>
+                  </div>
+                  <div class="tabular-row">
+                      <div class="tabular-cell">Boxed Layout</div>
+                  </div>
+                  <div class="tabular-row">
+                      <div class="tabular-cell">Collapse Leftbar</div>
+                  </div>
+                  <div class="tabular-row">
+                      <div class="tabular-cell">Collapse Rightbar</div>
+                  </div>
+                  <div class="tabular-row hide" id="demo-horizicon">
+                      <div class="tabular-cell">Horizontal Icons</div>
+                  </div>
+              </div>
+          </div>
+      </div>
+</div>
+<style media="screen">
+.demo-options {
+  z-index: 900;
+  position: fixed;
+  top: 144px;
+  width: 260px;
+  border: 1px solid #dadfe3;
+  border-right: 0 !important;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.07);
+  padding: 0;
+  border-bottom-left-radius: 3px;
+  right: -260px;
+  z-index: 1196;
+  background: #fff;
+  -webkit-transition: transform 0.15s ease;
+  -o-transition: transform 0.15s ease;
+  transition: transform 0.15s ease;
+}
+.demo-options.active {
+  transform: translateX(-260px);
+  -ms-transform: translateX(-260px);
+  -o-transform: translateX(-260px);
+  -webkit-transform: translateX(-260px);
+}
+.demo-options .demo-heading {
+  padding: 11px 0px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #93a8a8;
+  background: #fafbfc;
+  border-bottom: 1px solid #e6eaed;
+}
+.demo-options .demo-options-icon {
+  display: inline-block;
+  position: absolute;
+  left: -43px;
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid #dadfe3;
+  border-right: 0 !important;
+  letter-spacing: normal;
+  text-transform: none;
+  background: #fafbfc;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  top: -1px;
+  cursor: pointer;
+  box-shadow: -1px 2px 1px rgba(0, 0, 0, 0.07);
+}
+</style>
+
+<!-- <li v-for="(item, index) in time"
+     key="'time' + index"
+     @click="selectTimer(index)"
+     :class="timeIndex === index ? 'default default-active' : 'default' ">
+     {{item.title}}
+</li>
+
+首先重点是 :class=”timeIndex === index ? ” ” : ” “>
+
+然后定义一个timeIndex变量，初始化为0，就是下标为0
+
+选择时间 @click="selectTimer(index)"
+selectTimer(index) {
+  this.timeIndex = index;
+}, -->
