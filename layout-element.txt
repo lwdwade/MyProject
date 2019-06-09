@@ -1,0 +1,65 @@
+<template>
+  <el-container>
+    <el-scrollbar class="flex-scrollbar">
+      <el-header>Header</el-header>
+      <el-container>
+        <el-aside>Aside</el-aside>
+        <el-container>
+          <el-main>
+            <p>12312222224124</p>
+            <p>12312222224124</p>
+          </el-main>
+          <el-footer style="background: red;height: 40px">Footer</el-footer>
+        </el-container>
+      </el-container>
+    </el-scrollbar>
+  </el-container>
+</template>
+
+<style>
+  body, html {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+  body > .el-container {
+    height: 100%;
+    min-height: 100vh;
+  }
+  .el-header {
+    background: blue;
+    text-align: center;
+    height: 80px !important;
+    line-height: 80px !important;
+  }
+  .el-aside {
+    background: peru;
+    width: 40px !important;
+  }
+  .el-main {
+    padding: 0 !important;
+    min-height: calc(100vh - 120px);
+  }
+  .el-footer {
+    background: red;
+    text-align: center;
+    height: 40px !important;
+    line-height: 40px !important;
+  }
+  .el-scrollbar__wrap{
+    overflow-x: hidden !important;
+  }
+  .default-scrollbar {
+    width: 100%;
+    height: 100%;
+  }
+  .flex-scrollbar {
+    width: auto;
+    height: auto;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  
+</style>
+
